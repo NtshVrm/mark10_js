@@ -1,0 +1,82 @@
+:root {
+    --primary_color: #638EFF;
+    --background_color: 
+    #F3F4F6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    max-width: 50vw;
+    margin: auto;
+    background-color: var(--background_color);
+}
+
+.result {
+    display: none;
+    flex-direction: column;
+}
+
+.final-result{
+    display: none;
+    flex-direction: column;
+}
+
+.header {
+    background-color: var(--primary_color);
+    padding: 1rem;
+}
+
+.heading {
+    text-align: center;
+}
+
+.heading-description {
+    text-align: center;
+}
+
+img {
+    padding: 1.5rem 0rem;
+    width: 40%;
+    margin: auto;;
+}
+
+button {
+    background-color: var(--primary_color);
+    font-size: 1.2rem;
+    padding: 2px;
+    margin: 1rem;
+    border-radius: 0.3rem;
+    max-width: 30%;
+    border: none;
+    margin-top: 0.4rem;
+    position: relative;
+    left: 32.5%;
+
+}
+
+label {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: auto;
+}
+
+input {
+    padding: 0.5rem;
+    width: 50%;
+    margin: auto;
+    border-width: 2px;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    font-size: 1.5rem;
+  }
+
+ 
