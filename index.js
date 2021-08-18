@@ -19,11 +19,13 @@ function display() {
 function validate() {
     message.style.display = "None";
 
+
     if(isNaN(billAmount.value) || isNaN(cashGiven.value)) {
         showMessage("Please enter a valid number!")
     } else {
         if(billAmount.value > 0) {
             const amountToBeGiven = cashGiven.value - billAmount.value;
+            showMessage("Amount to be returned:"+amountToBeGiven)
             numberOfNotes(amountToBeGiven);
         }else {
             showMessage("Please enter a number greater than 0!")
