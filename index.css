@@ -1,36 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@1,700&display=swap');
 :root {
-    --primary_color: #638EFF;
-    --background_color: 
-    #F3F4F6;
+  --primary-color: #6D28D9;
+  --text-color: black;
 }
-
 * {
     margin: 0;
     padding: 0;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    max-width: 50vw;
+    font-family: 'STIX Two Text', serif;
+    text-align: center;
+    background-color:white;
+  }
+  
+  .ow {
+    background-color: black;
+    color: var(--primary-color);
+    border-radius: 2rem;
+  }
+  .color-inverted {
+    color: black;
+  }
+  
+  .alt-color {
+    color: var(--primary-color);
+  }
+  
+  img {
+    width: 350px;
+  }
+  
+  /* INPUT */
+  
+  input {
+    padding: 0.5rem;
+  }
+  
+  /* CONTAINER */
+  
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  
+  .container-left {
+    text-align: left;
     margin: auto;
-    background-color: var(--background_color);
+  }
+  
+  .container-right {
+    text-align: right;
+    margin: auto;
+  }
+  .container-center {
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .navigation {
+    background-color: var(--primary-color);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin: auto;
+  }
+  
+  .navigation .nav-brand {
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--text-color);
+  }
+  .header {
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: var(--primary-color);
+  }
+  
+  .purchase-price {
+    padding: 1rem;
+    font-size: large;
+    font-weight: bold;
+  }
+  
+  .units {
+    padding: 1rem;
+    font-size: large;
+    font-weight: bold;
+  }
+  
+  .current-price {
+    padding: 1rem;
+    font-size: large;
+    font-weight: bold;
+  }
+  
+  .check {
+    padding: 1rem;
+  }
+  
+  /*BUTTON*/
+  button {
+    background-color: var(--primary-color);
+    font-size: large;
+    width: 200px;
+    color: black;
+    margin: 0.5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-weight: bold;
+  }
+  
+  /* .final-result {
+    padding: 1rem;
+    height: 2rem;
+    font-size: x-large;
+    background-color: var(--primary-color);
+    border-radius: 1rem;
+  } */
+  
+#error-message{
+    background-color: red;
+    font-size: larger;
+    border-radius: 1rem;
+    width:50%;
+    text-align: center;
+    margin:auto;
 }
 
-.result {
-    display: none;
-    flex-direction: column;
-}
+
 
 .final-result{
     display: none;
     flex-direction: column;
+    padding:0.5rem;
 }
 
-.header {
-    background-color: var(--primary_color);
-    padding: 1rem;
-}
 
 .heading {
     text-align: center;
@@ -46,19 +151,6 @@ img {
     margin: auto;;
 }
 
-button {
-    background-color: var(--primary_color);
-    font-size: 1.2rem;
-    padding: 2px;
-    margin: 1rem;
-    border-radius: 0.3rem;
-    max-width: 30%;
-    border: none;
-    margin-top: 0.4rem;
-    position: relative;
-    left: 32.5%;
-
-}
 
 label {
     font-size: 1.2rem;
@@ -66,17 +158,11 @@ label {
     margin: auto;
 }
 
-input {
-    padding: 0.5rem;
-    width: 50%;
-    margin: auto;
-    border-width: 2px;
-}
 
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
     font-size: 1.5rem;
+    background-color:#C4B5FD;
   }
 
- 

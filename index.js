@@ -9,18 +9,16 @@ const resultContainer = document.querySelector(".result");
 const tableContainer = document.querySelector(".final-result");
 
 checkButton.addEventListener("click", display);
-nextButton.addEventListener("click", () => {
-    resultContainer.style.display = 'flex';
-
-});
 
 function display() {
     validate()
     tableContainer.style.display = "flex";
+    resultContainer.style.display = 'flex';
 }
 
 function validate() {
     message.style.display = "None";
+
     if(isNaN(billAmount.value) || isNaN(cashGiven.value)) {
         showMessage("Please enter a valid number!")
     } else {
